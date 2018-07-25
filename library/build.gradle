@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 27
 
         versionCode Integer.parseInt(project.property("VERSION_CODE"))
         versionName project.property("VERSION_NAME")
@@ -23,9 +23,9 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:26.0.+'
-    compile 'org.jboss.aerogear:aerogear-android-pipe:3.1.0'
-    compile ('com.google.firebase:firebase-messaging:11.0.1', {
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'org.jboss.aerogear:aerogear-android-pipe:4.0.0'
+    compile ('com.google.firebase:firebase-messaging:17.1.0', {
         exclude group: 'com.android.support', module: 'support-v4'
     })
 
